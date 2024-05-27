@@ -5,6 +5,7 @@ return {
       sql = { "sqlformatter" },
       svg = { "svgo" },
       php = { "blade-formatter" },
+      blade = { "blade-formatter" },
     },
     formatters = {
       sqlformatter = {
