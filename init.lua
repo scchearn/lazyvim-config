@@ -27,3 +27,17 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   command = "set filetype=blade",
   group = "BladeFiletype",
 })
+
+-- Setup mini.comment with custom configuration
+require("mini.comment").setup({
+  options = {
+    custom_commentstring = function()
+      -- Check if the filetype is 'blade'
+      if vim.bo.filetype == "blade" then
+        return "{{-- %s --}}"
+      end
+      -- Fallback to the default commentstring
+      return vim.bo.commentstring
+    end,
+  },
+})
