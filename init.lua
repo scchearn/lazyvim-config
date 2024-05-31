@@ -41,3 +41,8 @@ require("mini.comment").setup({
     end,
   },
 })
+
+-- Disable underline for specific Tree-sitter highlight groups
+vim.cmd([[
+  highlight! link @string.special.url.html String
+]])
