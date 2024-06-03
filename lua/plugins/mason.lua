@@ -2,7 +2,7 @@ return {
   "williamboman/mason.nvim",
   opts = {
     ensure_installed = {
-      "astro-language-server",
+      -- "astro-language-server",
       "blade-formatter",
       "css-lsp",
       "emmet-ls",
