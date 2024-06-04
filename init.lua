@@ -46,3 +46,10 @@ require("mini.comment").setup({
 vim.cmd([[
   highlight! link @string.special.url.html String
 ]])
+
+-- Setup Telescope with custom configuration
+require("telescope").setup({
+  defaults = {
+    path_display = { "smart" },
+  },
+})
