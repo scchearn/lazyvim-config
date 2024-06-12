@@ -23,3 +23,11 @@ keymap.set("n", "<leader>ba", ":%bd<enter>", { desc = "Close all buffers" })
 --   "<ESC><CMD>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
 --   { desc = "Toggle comment" }
 -- )
+
+-- Set comment for insert mode to ctrl + period.
+keymap.set(
+  "i",
+  "<C-.>",
+  '<ESC><CMD>lua require("mini.comment").toggle_lines(vim.fn.line("."), vim.fn.line("."))<CR>i',
+  { noremap = true, silent = true, desc = "Comment (Insert mode)" }
+)
