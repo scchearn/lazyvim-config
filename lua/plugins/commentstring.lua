@@ -1,4 +1,4 @@
 return {
   "JoosepAlviste/nvim-ts-context-commentstring",
-  event = "BufEnter",
+  event = "LazyFile",
 }

@@ -1,6 +1,6 @@
 return {
   "mbbill/undotree",
-  event = "BufEnter",
+  event = "LazyFile",
   keys = {
     { "<leader>uu", "<cmd>UndotreeToggle<cr>", desc = "Toggle undotree" },
   },
