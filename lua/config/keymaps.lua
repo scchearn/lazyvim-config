@@ -31,3 +31,5 @@ keymap.set(
   '<ESC><CMD>lua require("mini.comment").toggle_lines(vim.fn.line("."), vim.fn.line("."))<CR>i',
   { noremap = true, silent = true, desc = "Comment (Insert mode)" }
 )
+
+keymap.set("n", "<C-x>", LazyVim.ui.bufremove, { desc = "Close buffer" })
