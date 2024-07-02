@@ -3,7 +3,6 @@ return {
   opts = {
     servers = {
       cssls = {
-        -- filetypes = { "svelte" },
         settings = {
           css = {
             lint = {
@@ -26,6 +25,34 @@ return {
         emmetCompletions = true,
         includedLanguages = {},
       },
+      -- vtsls = {
+      --   filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
+      --   settings = {
+      --     vtsls = {
+      --       enableMoveToFileCodeAction = true,
+      --       autoUseWorkspaceTsdk = true,
+      --       experimental = {
+      --         completion = {
+      --           enableServerSideFuzzyMatch = true,
+      --         },
+      --       },
+      --     },
+      --     typescript = {
+      --       updateImportsOnFileMove = { enabled = "always" },
+      --       suggest = {
+      --         completeFunctionCalls = true,
+      --       },
+      --       inlayHints = {
+      --         enumMemberValues = { enabled = true },
+      --         functionLikeReturnTypes = { enabled = true },
+      --         parameterNames = { enabled = "literals" },
+      --         parameterTypes = { enabled = true },
+      --         propertyDeclarationTypes = { enabled = true },
+      --         variableTypes = { enabled = false },
+      --       },
+      --     },
+      --   },
+      -- },
     },
   },
 }
