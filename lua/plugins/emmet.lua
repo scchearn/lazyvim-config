@@ -17,6 +17,7 @@ return {
             "markdown",
             "ejs",
             "php",
+            "blade",
           },
           init_options = {
             html = {
