@@ -95,3 +95,6 @@ Neovim
 semver
 stylua
 rtp
+livewireScripts
+livewireStyles
+async
