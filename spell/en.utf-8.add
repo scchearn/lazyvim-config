@@ -113,3 +113,9 @@ noice
 ok
 lazyredraw
 TreeSitter
+Kanata
+remapper
+kanata
+sbin
+ExecStart
+WantedBy
