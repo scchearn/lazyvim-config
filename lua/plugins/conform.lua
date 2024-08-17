@@ -14,8 +14,16 @@ return {
         args = { "--config", vim.fn.stdpath("config") .. "/formatters/sql/config.json" },
       },
       svgo = {
-        command = "svgo",
-        args = { "--input", "-", "--output", "-", "--pretty" },
+        command = "/usr/bin/svgo",
+        args = {
+          "--input",
+          "-",
+          "--output",
+          "-",
+          "--pretty",
+          "--config",
+          vim.fn.stdpath("config") .. "/formatters/svgo/svgo.config.js",
+        },
       },
     },
   },
