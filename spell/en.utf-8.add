@@ -122,3 +122,11 @@ WantedBy
 SvelteKit
 sveltekit
 bg
+ai
+node
+vercel
+Env
+env
+Vite
+vite
+js
