@@ -28,6 +28,22 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   group = "BladeFiletype",
 })
 
+-- Set filetype for .cshtml and .razor files
+vim.filetype.add({
+  pattern = {
+    [".*%.cshtml"] = "razor",
+    [".*%.razor"] = "razor",
+  },
+})
+
+-- Create an augroup for setting the filetype
+vim.api.nvim_create_augroup("RazorFiletype", { clear = true })
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = { "*.cshtml", "*.razor" },
+  command = "set filetype=razor",
+  group = "RazorFiletype",
+})
+
 -- Setup mini.comment with custom configuration
 require("mini.comment").setup({
   options = {

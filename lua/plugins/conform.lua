@@ -7,8 +7,13 @@ return {
       svg = { "svgo" },
       php = { "blade-formatter" },
       blade = { "blade-formatter" },
+      cs = { "csharpier" },
     },
     formatters = {
+      csharpier = {
+        command = "dotnet-csharpier",
+        args = { "--write-stdout" },
+      },
       sqlformatter = {
         command = vim.fn.stdpath("data") .. "/mason/packages/sql-formatter/node_modules/.bin/sql-formatter",
         args = { "--config", vim.fn.stdpath("config") .. "/formatters/sql/config.json" },

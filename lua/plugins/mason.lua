@@ -26,6 +26,9 @@ return {
       "typescript-language-server",
       "xmlformatter",
       "yaml-language-server",
+      "csharpier",
+      "netcoredbg",
+      "omnisharp",
     },
   },
 }
