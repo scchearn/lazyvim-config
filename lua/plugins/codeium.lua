@@ -3,7 +3,7 @@ return {
   event = "VeryLazy",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    "hrsh7th/nvim-cmp",
+    "yioneko/nvim-cmp",
   },
   config = function()
     require("codeium").setup({})

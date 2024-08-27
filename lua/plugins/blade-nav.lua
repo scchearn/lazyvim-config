@@ -2,7 +2,7 @@ return {
   "ricardoramirezr/blade-nav.nvim",
   event = "LazyFile",
   dependencies = {
-    "hrsh7th/nvim-cmp",
+    "yioneko/nvim-cmp",
   },
   ft = { "blade", "php" },
 }
