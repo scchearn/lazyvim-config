@@ -12,6 +12,7 @@ return {
   },
   {
     "luckasRanarison/tailwind-tools.nvim",
+    event = "LazyFile",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     opts = {
       document_color = {
