@@ -137,3 +137,12 @@ RLS
 eq
 refreshToken
 href
+ProgId
+MaxLength
+TypeName
+varchar
+DateTimeOffset
+readonly
+DbSet
+LINQPad
+NuGet
