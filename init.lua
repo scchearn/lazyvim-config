@@ -48,15 +48,39 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 require("mini.comment").setup({
   options = {
     custom_commentstring = function()
-      -- Check if the filetype is 'blade'
-      if vim.bo.filetype == "blade" then
-        return "{{-- %s --}}"
-      end
-      -- Fallback to the default commentstring
-      return vim.bo.commentstring
+      -- Define a table of filetype-specific comment strings
+      local comment_strings = {
+        blade = "{{-- %s --}}",
+        cs = "// %s",
+      }
+      -- Get the comment string for the current filetype, or fall back to the default
+      return comment_strings[vim.bo.filetype] or vim.bo.commentstring
     end,
   },
 })
+-- require("mini.comment").setup({
+--   options = {
+--     custom_commentstring = function()
+--       if vim.bo.filetype == "blade" then
+--         return "{{-- %s --}}"
+--       end
+--       -- Fallback to the default commentstring
+--       return vim.bo.commentstring
+--     end,
+--   },
+-- })
+--
+-- require("mini.comment").setup({
+--   options = {
+--     custom_commentstring = function()
+--       if vim.bo.filetype == "cs" then
+--         return "// %s"
+--       end
+--       -- Fallback to the default commentstring
+--       return vim.bo.commentstring
+--     end,
+--   },
+-- })
 
 -- Disable underline for specific Tree-sitter highlight groups
 vim.cmd([[
