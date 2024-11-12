@@ -32,4 +32,6 @@ keymap.set(
   { noremap = true, silent = true, desc = "Comment (Insert mode)" }
 )
 
-keymap.set("n", "<C-x>", LazyVim.ui.bufremove, { desc = "Close buffer" })
+keymap.set("n", "<C-x>", function()
+  Snacks.bufdelete.delete()
+end, { desc = "Close buffer" })
