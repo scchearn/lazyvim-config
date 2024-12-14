@@ -16,6 +16,13 @@ return {
           less = common_lint_settings,
         },
       },
+      svelte = {
+        settings = {
+          css = common_lint_settings,
+          scss = common_lint_settings,
+          less = common_lint_settings,
+        },
+      },
     },
   },
 }
