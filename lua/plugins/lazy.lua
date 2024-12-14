@@ -1,4 +1,4 @@
 return {
-  "yioneko/nvim-cmp",
-  branch = "perf",
+  -- "yioneko/nvim-cmp",
+  -- branch = "perf",
 }
