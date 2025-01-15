@@ -16,6 +16,9 @@ return {
       "typescript",
       "vim",
       "yaml",
+      "svelte",
+      "css",
+      "scss"
     },
   },
 }
