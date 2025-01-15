@@ -21,18 +21,25 @@ return {
       desc = "Continue",
     },
     {
-      "<leader>rs",
+      "<C-'>",
       function()
         require("dap").step_over()
       end,
       desc = "Step over",
     },
     {
-      "<leader>ri",
+      "<C-;>",
       function()
         require("dap").step_into()
       end,
       desc = "Step into",
+    },
+    {
+      "<C-:>",
+      function()
+        require("dap").step_out()
+      end,
+      desc = "Step out",
     },
   },
   config = function()
