@@ -1,11 +1,17 @@
 return {
   "stevearc/conform.nvim",
   opts = {
-    -- log_level = vim.log.levels.DEBUG,
     formatters_by_ft = {
-      svg = { "svgo" },
+      sql = { "sqlformatter" }, -- for SQL files
+      svg = { "svgo" }, -- for SVG files
     },
     formatters = {
+      -- SQL Formatter configuration
+      sqlformatter = {
+        command = "/home/sam/.local/share/pnpm/sql-formatter",
+        args = { "--config", vim.fn.stdpath("config") .. "/formatters/sql/config.json" },
+      },
+      -- SVGO configuration
       svgo = {
         command = "/usr/bin/svgo",
         args = {
