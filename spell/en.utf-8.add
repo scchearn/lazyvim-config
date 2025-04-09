@@ -193,3 +193,4 @@ ServiceResponse
 v1
 Zod
 claude
+ServiceError
