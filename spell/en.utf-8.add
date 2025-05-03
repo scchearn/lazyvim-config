@@ -194,3 +194,9 @@ v1
 Zod
 claude
 ServiceError
+DOMPurify
+MediaService
+MediaInterface
+webPath
+params
+GSAP
