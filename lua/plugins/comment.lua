@@ -3,8 +3,8 @@ return {
   opts = {
     mappings = {
       comment = "gc",
-      comment_line = "<leader>.",
-      comment_visual = "<leader>.",
+      comment_line = "<C-.>",
+      comment_visual = "<C-.>",
       textobject = "gc",
     },
   },

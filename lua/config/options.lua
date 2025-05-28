@@ -11,4 +11,5 @@ opt.formatoptions = "jcroqlnt"
 opt.breakindent = true
 opt.breakindentopt = "shift:2"
 
+-- Spelling
 opt.spell = true

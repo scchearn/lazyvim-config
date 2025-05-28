@@ -1,23 +1,17 @@
 return {
   "stevearc/conform.nvim",
   opts = {
-    -- log_level = vim.log.levels.DEBUG,
     formatters_by_ft = {
-      sql = { "sqlformatter" },
-      svg = { "svgo" },
-      php = { "blade-formatter" },
-      blade = { "blade-formatter" },
-      cs = { "csharpier" },
+      sql = { "sqlformatter" }, -- for SQL files
+      svg = { "svgo" }, -- for SVG files
     },
     formatters = {
-      csharpier = {
-        command = "dotnet-csharpier",
-        args = { "--write-stdout" },
-      },
+      -- SQL Formatter configuration
       sqlformatter = {
-        command = vim.fn.stdpath("data") .. "/mason/packages/sql-formatter/node_modules/.bin/sql-formatter",
+        command = "/home/sam/.local/share/pnpm/sql-formatter",
         args = { "--config", vim.fn.stdpath("config") .. "/formatters/sql/config.json" },
       },
+      -- SVGO configuration
       svgo = {
         command = "/usr/bin/svgo",
         args = {
