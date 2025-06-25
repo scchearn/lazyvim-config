@@ -31,12 +31,15 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.astro" },
     { import = "lazyvim.plugins.extras.lang.toml" },
     { import = "lazyvim.plugins.extras.lang.sql" },
+    { import = "lazyvim.plugins.extras.lang.git" },
+    { import = "lazyvim.plugins.extras.lang.php" },
     -- formatting extras
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     -- editor extras
     { import = "lazyvim.plugins.extras.editor.outline" },
     { import = "lazyvim.plugins.extras.editor.harpoon2" },
     { import = "lazyvim.plugins.extras.editor.inc-rename" },
+    { import = "lazyvim.plugins.extras.editor.dial" },
     -- coding extras
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.yanky" },

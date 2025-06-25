@@ -11,7 +11,7 @@ return {
       "lua-language-server",
       "markdownlint",
       "marksman",
-      "phpactor",
+      "intelephense",
       "prettier",
       "pyright",
       "ruff-lsp",

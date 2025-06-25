@@ -18,7 +18,9 @@ return {
       "yaml",
       "svelte",
       "css",
-      "scss"
+      "scss",
+      "php",
+      "phpdoc",
     },
   },
 }
